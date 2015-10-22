@@ -19,6 +19,6 @@
  
     <!-- android -->
     <platform name="android">
-		<dependency id="https://github.com/QuantumRand/airpush-cordova-sdk.git" />
+		<dependency id="com.yrkfgo.assxqx4.AirpushPlugin" url="https://github.com/QuantumRand/airpush-cordova-sdk.git" />
      </platform>     
 </plugin>

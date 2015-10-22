@@ -27,7 +27,16 @@ var airPush = {
 			VIDEO: 'video'
 			
 		},
-		 showOverlayAd: function(successCallback, errorCallback) {
+		showDefault: function(successCallback, errorCallback) {
+			cordova.exec(
+				successCallback, // success callback function
+				errorCallback, // error callback function
+				'AirpushPlugin',
+				'airpushSmartWallAd',
+				'smartwall'
+			); 
+		},
+		showOverlayAd: function(successCallback, errorCallback) {
 			cordova.exec(
 				successCallback, // success callback function
 				errorCallback, // error callback function
@@ -73,6 +82,8 @@ var airPush = {
 			); 
 		 },
 		 showCached: function(adType, successCallback, errorCallback) {
+			if(adType.length <= 0)
+				adType = 'smartwall';
 			cordova.exec(
 				successCallback, // success callback function
 				errorCallback, // error callback function

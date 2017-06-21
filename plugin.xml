@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.quantumrand.cordova.plugin.airpush"
-      version="0.0.1">
-    <engines>
-        <engine name="cordova" version=">=3.0.0" />
-    </engines>
-    <name>cordova-airpush-plugin</name>
-    <description>Cordova AirPush Plugin</description>
-    <author>QuantumRand</author>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-airpush"
+    version="1.0.120">
+	
+    <name>Cordova airpush plugin</name>
+    <description>show leaderboard and achievements (google play game and game center, SDK)</description>
+    <author>Sang Ki Kwon (Cranberrygame)</author>	
     <license>MIT</license>
-    <keywords>phonegap,cordova,airpush,ads</keywords>
- 
+    <keywords>cordova,plugin,game,google play game,game center</keywords>
+    <repo>https://github.com/matrixreal/cordova-airpush-plugin</repo>
+    <engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
  
     <js-module src="www/AirPush.js" name="airPush">
         <clobbers target="airPush" />
